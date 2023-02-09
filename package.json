@@ -1,0 +1,70 @@
+{
+  "name": "api-app",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "private": true,
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "doha",
+    "email": "doha.essam@istnetworks.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^14.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint && npm run mocha",
+    "lint": "eslint src/. test/. --config .eslintrc.json --fix",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ],
+    "ignore": []
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^4.5.15",
+    "@feathersjs/authentication-local": "^4.5.15",
+    "@feathersjs/authentication-oauth": "^4.5.15",
+    "@feathersjs/configuration": "^4.5.15",
+    "@feathersjs/errors": "^4.5.15",
+    "@feathersjs/express": "^4.5.15",
+    "@feathersjs/feathers": "^4.5.15",
+    "@feathersjs/mongodb": "^5.0.0-pre.20",
+    "@feathersjs/socketio": "^4.5.15",
+    "@feathersjs/transport-commons": "^4.5.15",
+    "@stoplight/feathers-mongoose": "^5.1.1",
+    "body-parser": "^1.20.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "feathers-mongoose": "^8.5.1",
+    "helmet": "^5.1.1",
+    "jwt-decode": "^3.1.2",
+    "mongodb-core": "^3.2.7",
+    "mongoose": "^6.6.1",
+    "mongoose-type-email": "^1.1.2",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "axios": "^1.2.2",
+    "eslint": "^8.27.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
